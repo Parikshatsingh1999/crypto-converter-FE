@@ -1,7 +1,7 @@
 
 export const createRequest = async (path, body) => {
     try {
-        const baseUrl = "https://crypto-converted-be-1pah.vercel.app/api";
+        const baseUrl = "https://crypto-converted-be.vercel.app/api";
         const fetchBody = {
             method: body?.method || "GET",
             mode: "cors",
