@@ -1,13 +1,13 @@
 
 export const createRequest = async (path, body) => {
     try {
-        const baseUrl = "https://crypto-converted-be.vercel.app/api";
+        const baseUrl = "https://crypto-converter-be.onrender.com/api";
         const fetchBody = {
             method: body?.method || "GET",
             mode: "cors",
             cache: "no-cache",
             headers: {
-                "content-type": "application/json"
+                "Content-Type": "application/json",
             }
         }
         if (body?.payload) {
